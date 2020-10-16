@@ -5,14 +5,17 @@ module.exports = {
   title: 'vuepress_demo',
   description: 'vuepress_demo',
   head: [
-    ['link', {
-      rel: 'icon',
-      href: '/img/logo'
-    }]
+    ['link', { rel: 'icon', href: '/logo.png'}]
   ],
-  themeConfig: {
-    editLinks: true,
+  themeConfig: { // https://www.vuepress.cn/theme/
+    // 页面底部右侧左侧 github配置相关 
+    repo: 'wumo1016/vuepress_demo',
+    docsBranch: 'main',
     docsDir: 'docs',
+    editLinks: true,
+    editLinkText: '在 GitHub 上编辑此页',
+    // 页面底部右侧
+    lastUpdated: '上次更新',
     nav: [{
         text: '首页',
         link: '/'
@@ -58,6 +61,5 @@ module.exports = {
         },
       ]
     },
-    lastUpdated: '上次更新',
   },
 }
