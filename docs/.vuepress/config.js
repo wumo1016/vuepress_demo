@@ -1,9 +1,9 @@
 module.exports = {
-  base: '/vuePress_demo/',
+  base: '/vuepress_demo/',
   dest: 'dist',
   port: '8080',
-  title: 'vuePress_demo',
-  description: 'vuePress_demo',
+  title: 'vuepress_demo',
+  description: 'vuepress_demo',
   head: [
     ['link', {
       rel: 'icon',
