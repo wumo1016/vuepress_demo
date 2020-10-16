@@ -1,5 +1,6 @@
 module.exports = {
-  base: '/',
+  base: '/vuePress_demo/',
+  dest: 'dist',
   port: '8080',
   title: 'vuePress_demo',
   description: 'vuePress_demo',
@@ -10,56 +11,53 @@ module.exports = {
     }]
   ],
   themeConfig: {
+    editLinks: true,
+    docsDir: 'docs',
     nav: [{
         text: '首页',
         link: '/'
       },
       {
-        text: '目录1',
-        link: '/test/'
+        text: '2.x版本',
+        link: '/v2/'
+      },
+      {
+        text: '3.x版本',
+        link: '/v3/'
       },
     ],
     sidebar: {
-      '/test/': [{
-        title: '介绍',
-        path: '/test/',
-      }, {
-        title: '目录1',
-        path: '/test/menu1_1/',
-      }, ],
-
-      '/': [{
-          title: '介绍',
-          path: '/',
+      '/v2/': [
+        {
+          title: '首页',
+          path: '/v2/',
         },
         {
-          title: '目录1', // 必要的
+          title: '组件化',
           collapsable: false,
-          children: [{
-              title: '目录1_1',
-              path: '/menu1_1/'
-            },
-            {
-              title: '目录1_2',
-              path: '/menu1_2/'
-            },
+          children: [
+            ['components/', 'Introduction'], // 左侧菜单重命名
+            'components/createComponent', // 左侧菜单默认为页面内以及标题
+            'components/patch',
           ]
         },
         {
-          title: '目录2', // 必要的
+          title: '响应式对象',
           collapsable: false,
-          children: [{
-              title: '目录2_1',
-              path: '/menu2_1/'
-            },
-            {
-              title: '目录2_2',
-              path: '/menu2_2/'
-            },
+          children: [
+            'reactive/',
+            'reactive/object',
+            'reactive/getters',
           ]
         },
       ],
+      '/v3/': [
+        {
+          title: '首页',
+          path: '/v3/',
+        },
+      ]
     },
-    lastUpdated: 'Last Updated',
+    lastUpdated: '上次更新',
   },
 }
