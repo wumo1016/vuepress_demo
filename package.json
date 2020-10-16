@@ -1,0 +1,15 @@
+{
+  "name": "vuepress_demo",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "wuyibo <760478279wyb@gmail.com>",
+  "license": "ISC"
+}
