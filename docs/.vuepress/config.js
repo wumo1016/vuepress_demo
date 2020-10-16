@@ -28,6 +28,10 @@ module.exports = {
         text: '3.x版本',
         link: '/v3/'
       },
+      {
+        text: '博客',
+        link: 'https://www.wuyibo.store'
+      },
     ],
     sidebar: {
       '/v2/': [
